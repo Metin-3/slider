@@ -1,0 +1,114 @@
+#slide {
+    width: 100%;
+    /* height: 100v; */
+    position: relative;
+}
+
+.clippp {
+    clip-path: polygon(0 0, 100% 0, 77% 100%, 0% 100%);
+    background-color: blueviolet;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 50%;
+    height: 100vh;
+}
+
+.sliderr {
+    position: relative;
+}
+
+/* .sliderr .imgggg {
+    animation: animate__fadeOutDown;
+    animation-duration: 2s;
+} */
+
+
+.sliderr img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slidee-text {
+    position: absolute;
+    left: 5%;
+    top: 40%;
+    transform: translate(-5%, -50%);
+    width: 40%;
+    color: #fff;
+    text-align: start;
+    clip-path: polygon(0 0, 100% 0, 76% 100%, 0% 100%);
+    z-index: 4;
+}
+
+.slidee-text p {
+    text-decoration: underline;
+    animation: fadeInDown;
+    animation-duration: 2s;
+}
+
+.slidee-text h1 {
+    font-size: 80px;
+    font-weight: 700;
+    animation: pulse;
+    animation-duration: 2s;
+}
+
+.slidee-text button {
+    clip-path: polygon(0 0, 100% 0, 93% 100%, 0% 100%);
+    padding: 7px 15px;
+    border: none;
+    background-color: #f1ae44;
+    color: #000;
+    animation: fadeInUp;
+    animation-duration: 2s;
+}
+
+.slide-boxs {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+}
+
+.slide-box {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    background-color: #fff;
+    cursor: pointer;
+    clip-path: polygon(0 0, 100% 0, 72% 100%, 0% 100%);
+}
+
+@media(max-width: 992px) {
+    .slidee-text h1 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .slidee-text button {
+        font-size: 15px;
+        padding: 4px 10px;
+    }
+
+    .slide-boxs {
+        gap: 5px;
+    }
+
+    .slide-box {
+        width: 15px;
+        height: 15px;
+        border: 1px solid #000;
+        background-color: #fff;
+        cursor: pointer;
+        clip-path: polygon(0 0, 100% 0, 72% 100%, 0% 100%);
+    }
+}
